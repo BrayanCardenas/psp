@@ -7,6 +7,14 @@
     <title>Entrega</title>
   </head>
   <body>
+    <header>
+      <nav class="navbar">
+        <ul class="nav-links">
+          <li>Registrarse</li>
+          <li>Iniciar Sesión</li>
+        </ul>
+      </nav>
+    </header>
     <h1 class="titulo">Gastos Personales</h1>
     <h2 class="subtitulo">Registro de Gastos</h2>
     <section class="formulario">
@@ -27,8 +35,15 @@
         </div>
         <div class="monto">
           <label for="amount">Monto:</label>
-          <input type="number" id="amount" name="amount" required inputmode="decimal" placeholder="$ Ingresa monto" />
-        </div>        
+          <input
+            type="number"
+            id="amount"
+            name="amount"
+            required
+            inputmode="decimal"
+            placeholder="$ Ingresa monto"
+          />
+        </div>
         <button class="button" type="submit">Registrar Gasto</button>
       </form>
     </section>
@@ -37,8 +52,161 @@
       <button class="items">Items 2</button>
       <button class="items">Items 3</button>
     </section>-->
-    <section>
-      <div class="info"></div>
-    </section> 
+    <section class="info">
+      <div class="info-header">
+        <div>Monto</div>
+        <div>Categoría</div>
+        <div>Descripción</div>
+        <div>Fecha</div>
+        <div>Acciones</div>
+      </div>
+      <div class="items">
+        <div>$200.000</div>
+        <div>Comida</div>
+        <div>Almuerzo familiar</div>
+        <div>10/06/2025</div>
+        <div class="acciones">
+          <div class="icon" title="modificar">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#709bff"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-pencil-minus"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4"
+              />
+              <path d="M13.5 6.5l4 4" />
+              <path d="M16 19h6" />
+            </svg>
+          </div>
+          <div class="icon" title="eliminar">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#ff0000"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-eraser"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M19 20h-10.5l-4.21 -4.3a1 1 0 0 1 0 -1.41l10 -10a1 1 0 0 1 1.41 0l5 5a1 1 0 0 1 0 1.41l-9.2 9.3"
+              />
+              <path d="M18 13.3l-6.3 -6.3" />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="items">
+        <div>$40.000</div>
+        <div>Transporte</div>
+        <div>Uber</div>
+        <div>10/06/2025</div>
+        <div class="acciones" class="icon" title="modificar">
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#709bff"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-pencil-minus"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4"
+              />
+              <path d="M13.5 6.5l4 4" />
+              <path d="M16 19h6" />
+            </svg>
+          </div>
+          <div class="acciones" class="icon" title="eliminar">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#ff0000"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-eraser"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M19 20h-10.5l-4.21 -4.3a1 1 0 0 1 0 -1.41l10 -10a1 1 0 0 1 1.41 0l5 5a1 1 0 0 1 0 1.41l-9.2 9.3"
+              />
+              <path d="M18 13.3l-6.3 -6.3" />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="items">
+        <div>$50.000</div>
+        <div>Entretenimiento</div>
+        <div>Servicion stream</div>
+        <div>10/06/2025</div>
+        <div class="acciones" class="icon" title="modificar">
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#709bff"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-pencil-minus"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4"
+              />
+              <path d="M13.5 6.5l4 4" />
+              <path d="M16 19h6" />
+            </svg>
+          </div>
+          <div class="acciones" class="icon" title="eliminar">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#ff0000"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-eraser"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M19 20h-10.5l-4.21 -4.3a1 1 0 0 1 0 -1.41l10 -10a1 1 0 0 1 1.41 0l5 5a1 1 0 0 1 0 1.41l-9.2 9.3"
+              />
+              <path d="M18 13.3l-6.3 -6.3" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
